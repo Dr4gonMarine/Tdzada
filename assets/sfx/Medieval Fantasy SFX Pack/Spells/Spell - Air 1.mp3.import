@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c44vqjd73tvug"
+path="res://.godot/imported/Spell - Air 1.mp3-027ecfe67c93a6b43a7b610768d61da7.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Air 1.mp3"
+dest_files=["res://.godot/imported/Spell - Air 1.mp3-027ecfe67c93a6b43a7b610768d61da7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

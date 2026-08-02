@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpyvv3n76bxiw"
+path="res://.godot/imported/Spell - Ice Hand.mp3-ab7fda93c8119acba32251203e6798ef.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Ice Hand.mp3"
+dest_files=["res://.godot/imported/Spell - Ice Hand.mp3-ab7fda93c8119acba32251203e6798ef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

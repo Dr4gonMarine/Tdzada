@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b36urku1x6vl7"
+path="res://.godot/imported/Step 3.mp3-94d36c7488a6c1d0d6ea0e8fd49f7abf.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Steps/Step 3.mp3"
+dest_files=["res://.godot/imported/Step 3.mp3-94d36c7488a6c1d0d6ea0e8fd49f7abf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

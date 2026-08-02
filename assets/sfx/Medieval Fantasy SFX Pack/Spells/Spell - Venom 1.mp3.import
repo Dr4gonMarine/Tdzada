@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bapfq4tfp6qgr"
+path="res://.godot/imported/Spell - Venom 1.mp3-4dfff3d2f9ab5a85841c900237cd43e8.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Venom 1.mp3"
+dest_files=["res://.godot/imported/Spell - Venom 1.mp3-4dfff3d2f9ab5a85841c900237cd43e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

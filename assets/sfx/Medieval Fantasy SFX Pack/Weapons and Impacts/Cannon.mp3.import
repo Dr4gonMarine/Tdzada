@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dte5x8bj0qd0y"
+path="res://.godot/imported/Cannon.mp3-2a61fb8405d98e12644aeebc9ce9630d.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Weapons and Impacts/Cannon.mp3"
+dest_files=["res://.godot/imported/Cannon.mp3-2a61fb8405d98e12644aeebc9ce9630d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

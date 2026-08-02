@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cw0i2xx80epwo"
+path="res://.godot/imported/Spell - Plant Hand 2.mp3-fe3abb7f80e75a2fa878b44949a4db45.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Plant Hand 2.mp3"
+dest_files=["res://.godot/imported/Spell - Plant Hand 2.mp3-fe3abb7f80e75a2fa878b44949a4db45.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

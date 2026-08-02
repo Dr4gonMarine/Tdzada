@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jfvtww1w0lof"
+path="res://.godot/imported/Button 2.mp3-b66eefd9c4972c509c9122ca98c00619.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Misc/Button 2.mp3"
+dest_files=["res://.godot/imported/Button 2.mp3-b66eefd9c4972c509c9122ca98c00619.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

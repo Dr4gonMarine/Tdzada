@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b0oki54mjg65l"
+path="res://.godot/imported/Beast 5.mp3-db74e373ea96b6d11a66012388cf4160.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Beasts and Animals/Beast 5.mp3"
+dest_files=["res://.godot/imported/Beast 5.mp3-db74e373ea96b6d11a66012388cf4160.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

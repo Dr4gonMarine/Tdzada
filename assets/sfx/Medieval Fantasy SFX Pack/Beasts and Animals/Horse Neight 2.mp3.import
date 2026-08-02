@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://v007mmq7k2ba"
+path="res://.godot/imported/Horse Neight 2.mp3-0b1799a6af9c836927e0b583da02d336.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Beasts and Animals/Horse Neight 2.mp3"
+dest_files=["res://.godot/imported/Horse Neight 2.mp3-0b1799a6af9c836927e0b583da02d336.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

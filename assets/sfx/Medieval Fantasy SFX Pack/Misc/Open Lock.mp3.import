@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drmvtup7lmhgr"
+path="res://.godot/imported/Open Lock.mp3-a107e98addd372c1151e57c27f00e1a4.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Misc/Open Lock.mp3"
+dest_files=["res://.godot/imported/Open Lock.mp3-a107e98addd372c1151e57c27f00e1a4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cq86f4l3rrnag"
+path="res://.godot/imported/Female Death 1.mp3-3099baded2b553e96582b762395798b6.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Voices/Female Death 1.mp3"
+dest_files=["res://.godot/imported/Female Death 1.mp3-3099baded2b553e96582b762395798b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

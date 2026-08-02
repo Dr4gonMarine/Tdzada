@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://y4ustg5e1pp3"
+path="res://.godot/imported/Coin Flip 1.mp3-df50d63b191e66fbb69dfeca2a5184b1.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Coin Flip 1.mp3"
+dest_files=["res://.godot/imported/Coin Flip 1.mp3-df50d63b191e66fbb69dfeca2a5184b1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

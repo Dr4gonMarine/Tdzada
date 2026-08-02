@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bad5imbvrvmbx"
+path="res://.godot/imported/Step (water) 4.mp3-1da2a38dbb18350c6372e459079680c9.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Steps/Step (water) 4.mp3"
+dest_files=["res://.godot/imported/Step (water) 4.mp3-1da2a38dbb18350c6372e459079680c9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

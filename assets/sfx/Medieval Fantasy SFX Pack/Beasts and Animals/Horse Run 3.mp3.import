@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://be5xn855n1w8u"
+path="res://.godot/imported/Horse Run 3.mp3-68da2d7fc23b3e9c6939c1e275e58fd5.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Beasts and Animals/Horse Run 3.mp3"
+dest_files=["res://.godot/imported/Horse Run 3.mp3-68da2d7fc23b3e9c6939c1e275e58fd5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

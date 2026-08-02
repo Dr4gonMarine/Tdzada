@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bv1k8758kp6rl"
+path="res://.godot/imported/Female Attack Sword 1.mp3-b2f58bcc9e004f16ca2c26ba300923be.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Voices/Female Attack Sword 1.mp3"
+dest_files=["res://.godot/imported/Female Attack Sword 1.mp3-b2f58bcc9e004f16ca2c26ba300923be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

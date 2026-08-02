@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o8ypfw2gq352"
+path="res://.godot/imported/Unequip (Clothes).mp3-c3005a71d21a270badd1f81b540bafb1.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Unequip (Clothes).mp3"
+dest_files=["res://.godot/imported/Unequip (Clothes).mp3-c3005a71d21a270badd1f81b540bafb1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

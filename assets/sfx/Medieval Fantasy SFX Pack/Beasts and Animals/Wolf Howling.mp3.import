@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmhw0m7c6hhx7"
+path="res://.godot/imported/Wolf Howling.mp3-82e4187af910d7b0a5d380f68015384d.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Beasts and Animals/Wolf Howling.mp3"
+dest_files=["res://.godot/imported/Wolf Howling.mp3-82e4187af910d7b0a5d380f68015384d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

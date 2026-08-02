@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dw3xnckofq127"
+path="res://.godot/imported/Potion - Boiling.mp3-de4458fb2fbc782611d9f0f039459a93.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Potion - Boiling.mp3"
+dest_files=["res://.godot/imported/Potion - Boiling.mp3-de4458fb2fbc782611d9f0f039459a93.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

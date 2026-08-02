@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bd6qhfn6secqj"
+path="res://.godot/imported/Horse Step (Road) 2.mp3-f5b6d5cdad916525bc64c6efadd6cd1c.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Beasts and Animals/Horse Step (Road) 2.mp3"
+dest_files=["res://.godot/imported/Horse Step (Road) 2.mp3-f5b6d5cdad916525bc64c6efadd6cd1c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

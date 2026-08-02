@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cme1jmb0lm7a"
+path="res://.godot/imported/Coins Bag 2.mp3-48e416dd7f1c677d99cf219ee9e01c3f.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Coins Bag 2.mp3"
+dest_files=["res://.godot/imported/Coins Bag 2.mp3-48e416dd7f1c677d99cf219ee9e01c3f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

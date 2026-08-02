@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqqwlemghfli5"
+path="res://.godot/imported/Spell - Ice (Generic).mp3-94bff4e791d210ff9f0248ff20952da3.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Ice (Generic).mp3"
+dest_files=["res://.godot/imported/Spell - Ice (Generic).mp3-94bff4e791d210ff9f0248ff20952da3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

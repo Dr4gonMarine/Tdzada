@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://x2kulyaufs41"
+path="res://.godot/imported/Equip (Jewel).mp3-f0589370fb09735b9cbf7f11c0631480.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Equip (Jewel).mp3"
+dest_files=["res://.godot/imported/Equip (Jewel).mp3-f0589370fb09735b9cbf7f11c0631480.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

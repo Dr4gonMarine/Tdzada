@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bin0b2u184oic"
+path="res://.godot/imported/Spell - Ice Crack.mp3-ed69be060238fe37c32b90d04cccbc97.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Ice Crack.mp3"
+dest_files=["res://.godot/imported/Spell - Ice Crack.mp3-ed69be060238fe37c32b90d04cccbc97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

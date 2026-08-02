@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs2oltxc50akt"
+path="res://.godot/imported/Dog 5.mp3-518bfa61993b211678ff3cc766aac1b7.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Beasts and Animals/Dog 5.mp3"
+dest_files=["res://.godot/imported/Dog 5.mp3-518bfa61993b211678ff3cc766aac1b7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

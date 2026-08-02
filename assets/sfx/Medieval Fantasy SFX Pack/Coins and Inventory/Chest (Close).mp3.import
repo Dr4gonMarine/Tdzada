@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://boilhy865vrvh"
+path="res://.godot/imported/Chest (Close).mp3-6eea3d1caa198e612b1ef922d0552652.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Chest (Close).mp3"
+dest_files=["res://.godot/imported/Chest (Close).mp3-6eea3d1caa198e612b1ef922d0552652.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

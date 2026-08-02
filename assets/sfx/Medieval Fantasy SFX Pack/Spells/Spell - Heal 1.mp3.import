@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bw123yp68pn1g"
+path="res://.godot/imported/Spell - Heal 1.mp3-9f5f7e79380fba8b3bc80c0e44f5c112.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Heal 1.mp3"
+dest_files=["res://.godot/imported/Spell - Heal 1.mp3-9f5f7e79380fba8b3bc80c0e44f5c112.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

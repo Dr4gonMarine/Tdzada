@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bixwejyb2lqqd"
+path="res://.godot/imported/Chest (Open).mp3-1f4caa9b17822fad6bfe50c349063363.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Chest (Open).mp3"
+dest_files=["res://.godot/imported/Chest (Open).mp3-1f4caa9b17822fad6bfe50c349063363.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

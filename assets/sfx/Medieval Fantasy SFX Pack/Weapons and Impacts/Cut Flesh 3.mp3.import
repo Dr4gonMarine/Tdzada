@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cba7pkh84hemj"
+path="res://.godot/imported/Cut Flesh 3.mp3-e10e9f758d33bbedf455793bc9685d6e.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Weapons and Impacts/Cut Flesh 3.mp3"
+dest_files=["res://.godot/imported/Cut Flesh 3.mp3-e10e9f758d33bbedf455793bc9685d6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

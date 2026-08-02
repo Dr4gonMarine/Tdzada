@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba4ljd1f420qa"
+path="res://.godot/imported/Unequip (Jewel).mp3-36b84bfb8740ac188a63c80182c49809.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Unequip (Jewel).mp3"
+dest_files=["res://.godot/imported/Unequip (Jewel).mp3-36b84bfb8740ac188a63c80182c49809.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

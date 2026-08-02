@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0wl4q4se3c7q"
+path="res://.godot/imported/Map (Open).mp3-602e86d9cf71ee9926eaf92df5698476.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Coins and Inventory/Map (Open).mp3"
+dest_files=["res://.godot/imported/Map (Open).mp3-602e86d9cf71ee9926eaf92df5698476.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cin12duhsl02y"
+path="res://.godot/imported/Door (Close).mp3-4fe63bfd1221fe58ea100a3c720fa5e8.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Misc/Door (Close).mp3"
+dest_files=["res://.godot/imported/Door (Close).mp3-4fe63bfd1221fe58ea100a3c720fa5e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

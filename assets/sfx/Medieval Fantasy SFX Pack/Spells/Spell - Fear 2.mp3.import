@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dddfcdj4p7fav"
+path="res://.godot/imported/Spell - Fear 2.mp3-393500ee5bdd23eb5fb1ea7159c1ac9e.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Fear 2.mp3"
+dest_files=["res://.godot/imported/Spell - Fear 2.mp3-393500ee5bdd23eb5fb1ea7159c1ac9e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

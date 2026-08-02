@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2yil0u5372d6"
+path="res://.godot/imported/Spell - Fire Loop.mp3-de3ea2eadaa7f5808b1c1ae571727b66.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Fire Loop.mp3"
+dest_files=["res://.godot/imported/Spell - Fire Loop.mp3-de3ea2eadaa7f5808b1c1ae571727b66.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

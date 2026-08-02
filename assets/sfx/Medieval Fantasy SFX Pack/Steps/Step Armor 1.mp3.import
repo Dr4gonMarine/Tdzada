@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3v3iqde284o5"
+path="res://.godot/imported/Step Armor 1.mp3-7eb78a6041d4f82bb834d42da9faa8a0.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Steps/Step Armor 1.mp3"
+dest_files=["res://.godot/imported/Step Armor 1.mp3-7eb78a6041d4f82bb834d42da9faa8a0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

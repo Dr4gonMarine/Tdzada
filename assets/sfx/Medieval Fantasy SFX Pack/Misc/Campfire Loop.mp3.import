@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bypuj5rpdn5uf"
+path="res://.godot/imported/Campfire Loop.mp3-4ec6aa77299fcdd1e7391dd3a7618036.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Misc/Campfire Loop.mp3"
+dest_files=["res://.godot/imported/Campfire Loop.mp3-4ec6aa77299fcdd1e7391dd3a7618036.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

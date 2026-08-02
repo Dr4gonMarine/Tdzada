@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhknqmyud8n7c"
+path="res://.godot/imported/Sword 4.mp3-fc3d4aec1a7795224c52e7cabccb1ed4.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Weapons and Impacts/Sword 4.mp3"
+dest_files=["res://.godot/imported/Sword 4.mp3-fc3d4aec1a7795224c52e7cabccb1ed4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

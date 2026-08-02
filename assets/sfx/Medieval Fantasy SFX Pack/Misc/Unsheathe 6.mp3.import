@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://boxdl2k53twsu"
+path="res://.godot/imported/Unsheathe 6.mp3-740018e93538684d71e9fb5b1946f033.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Misc/Unsheathe 6.mp3"
+dest_files=["res://.godot/imported/Unsheathe 6.mp3-740018e93538684d71e9fb5b1946f033.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

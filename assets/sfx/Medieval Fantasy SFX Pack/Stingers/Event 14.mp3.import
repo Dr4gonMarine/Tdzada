@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmthkw246ibfx"
+path="res://.godot/imported/Event 14.mp3-44647d3f077b26d619c6b9fe9bc13006.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Stingers/Event 14.mp3"
+dest_files=["res://.godot/imported/Event 14.mp3-44647d3f077b26d619c6b9fe9bc13006.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

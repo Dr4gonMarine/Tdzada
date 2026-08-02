@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jjism8schdkr"
+path="res://.godot/imported/Impact 5.mp3-246478ea34985d48c21d069fff301ccb.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Weapons and Impacts/Impact 5.mp3"
+dest_files=["res://.godot/imported/Impact 5.mp3-246478ea34985d48c21d069fff301ccb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

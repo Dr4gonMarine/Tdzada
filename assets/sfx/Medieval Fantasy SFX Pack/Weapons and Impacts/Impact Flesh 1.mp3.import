@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://divf0hvc3oviu"
+path="res://.godot/imported/Impact Flesh 1.mp3-506991ab1970d32ec67b6d5215998fa3.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Weapons and Impacts/Impact Flesh 1.mp3"
+dest_files=["res://.godot/imported/Impact Flesh 1.mp3-506991ab1970d32ec67b6d5215998fa3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

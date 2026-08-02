@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5a3u7ojwmx6s"
+path="res://.godot/imported/Spell - Tree Root .mp3-4b9a7e931f750949eba9dfa6b9b7747e.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Spells/Spell - Tree Root .mp3"
+dest_files=["res://.godot/imported/Spell - Tree Root .mp3-4b9a7e931f750949eba9dfa6b9b7747e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

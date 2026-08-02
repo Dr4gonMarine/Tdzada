@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://f5bp52d3x583"
+path="res://.godot/imported/Male Death 1.mp3-bb20006e116b2a94add4f9d2396f46f6.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Medieval Fantasy SFX Pack/Voices/Male Death 1.mp3"
+dest_files=["res://.godot/imported/Male Death 1.mp3-bb20006e116b2a94add4f9d2396f46f6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
