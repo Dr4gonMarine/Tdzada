@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://cq0ednhj68oav"]
+
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="1_1ykrc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ycx7s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_htrvu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6lfjr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qd0o6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i5e4g"]
+sky_top_color = Color(0.22993064, 0.46108043, 0.69862145, 1)
+
+[sub_resource type="Sky" id="Sky_pvbb1"]
+sky_material = SubResource("ProceduralSkyMaterial_i5e4g")
+
+[sub_resource type="Environment" id="Environment_0bul0"]
+background_mode = 2
+sky = SubResource("Sky_pvbb1")
+
+[node name="PrototypeLevel" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_1ykrc")]
+
+[node name="Geometry" type="Node3D" parent="."]
+transform = Transform3D(11.32967, 0, 0, 0, 1, 0, 0, 0, 15.341726, 0, 0, 0)
+
+[node name="Floor" type="Area3D" parent="Geometry"]
+disable_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/Floor"]
+shape = SubResource("BoxShape3D_ycx7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Geometry/Floor"]
+mesh = SubResource("BoxMesh_htrvu")
+
+[node name="HeadBump" type="Area3D" parent="Geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4410079, 0)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/HeadBump"]
+shape = SubResource("BoxShape3D_6lfjr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Geometry/HeadBump"]
+mesh = SubResource("BoxMesh_qd0o6")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0bul0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 0.93966275, 0.34210217, 0, -0.34210217, 0.93966275, 0, 0, 0)
