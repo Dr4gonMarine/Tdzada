@@ -1,14 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://cq0ednhj68oav"]
+[gd_scene format=3 uid="uid://cq0ednhj68oav"]
 
-[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="1_1ykrc"]
+[ext_resource type="PackedScene" uid="uid://cqg74jy8jyvnk" path="res://scenes/player/player.tscn" id="1_1ykrc"]
+[ext_resource type="Texture2D" uid="uid://brw78i7sbnl8" path="res://assets/prototype/texture_06.png" id="2_ycx7s"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ycx7s"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_htrvu"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_6lfjr"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_qd0o6"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_htrvu"]
+albedo_texture = ExtResource("2_ycx7s")
+uv1_scale = Vector3(0.125, 0.125, 0.125)
+uv1_triplanar = true
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i5e4g"]
 sky_top_color = Color(0.22993064, 0.46108043, 0.69862145, 1)
@@ -20,34 +18,54 @@ sky_material = SubResource("ProceduralSkyMaterial_i5e4g")
 background_mode = 2
 sky = SubResource("Sky_pvbb1")
 
-[node name="PrototypeLevel" type="Node3D"]
+[node name="PrototypeLevel" type="Node3D" unique_id=268779134]
 
-[node name="Player" parent="." instance=ExtResource("1_1ykrc")]
+[node name="Player" parent="." unique_id=1396228196 instance=ExtResource("1_1ykrc")]
 
-[node name="Geometry" type="Node3D" parent="."]
+[node name="Geometry" type="Node3D" parent="." unique_id=270772853]
 transform = Transform3D(11.32967, 0, 0, 0, 1, 0, 0, 0, 15.341726, 0, 0, 0)
 
-[node name="Floor" type="Area3D" parent="Geometry"]
-disable_mode = 1
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Geometry" unique_id=972997974]
+transform = Transform3D(0.088263825, 0, 0, 0, 1, 0, 0, 0, 0.06518172, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_htrvu")
+use_collision = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/Floor"]
-shape = SubResource("BoxShape3D_ycx7s")
+[node name="CSGBox3D2" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=105400768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1904297, 6, -30.11377)
+size = Vector3(41, 13, 4)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Geometry/Floor"]
-mesh = SubResource("BoxMesh_htrvu")
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Geometry/CSGCombiner3D/CSGBox3D2" unique_id=1846261190]
+transform = Transform3D(1.3709104, 0, 0, 0, -4.371139e-08, -1.2, 0, 1, -5.2453665e-08, -4.1904297, -3.0646172, 0.28152466)
+operation = 2
+radius = 2.6367188
+height = 7.3786163
 
-[node name="HeadBump" type="Area3D" parent="Geometry"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4410079, 0)
-visible = false
+[node name="CSGBox3D3" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=2094605878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 11.084473, -15.5)
+size = Vector3(15, 3, 26)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Geometry/HeadBump"]
-shape = SubResource("BoxShape3D_6lfjr")
+[node name="CSGBox3D5" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=101198880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1.0338135, -19.5)
+size = Vector3(7, 2, 20)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Geometry/HeadBump"]
-mesh = SubResource("BoxMesh_qd0o6")
+[node name="CSGBox3D8" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=2054413434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5338135, -8)
+size = Vector3(7, 1, 7)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="CSGBox3D6" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=2102849411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 1.5338135, -22.500002)
+size = Vector3(7, 3, 14)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=1013894449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 2.0338135, -26.5)
+size = Vector3(7, 4, 6)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Geometry/CSGCombiner3D" unique_id=327703804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -18.500002)
+size = Vector3(49, 1, 68)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=395081468]
 environment = SubResource("Environment_0bul0")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=680835981]
 transform = Transform3D(1, 0, 0, 0, 0.93966275, 0.34210217, 0, -0.34210217, 0.93966275, 0, 0, 0)
