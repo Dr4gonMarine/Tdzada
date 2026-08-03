@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bevcu5ttjf1q6"]
+
+[ext_resource type="PackedScene" uid="uid://sv4callrjsc0" path="res://assets/weapons/arrow_A.gltf" id="1_bwbv1"]
+
+[node name="FlechaA" type="Node3D" unique_id=80951953]
+
+[node name="arrow_A2" parent="." unique_id=686375036 instance=ExtResource("1_bwbv1")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)

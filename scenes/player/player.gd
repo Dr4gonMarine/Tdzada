@@ -5,6 +5,7 @@ const JUMP_VELOCITY = 4.5
 const MOUSE_SENSITIVITY = 0.003
 
 @onready var head: Node3D = $Head
+@onready var weapon_animation = $ArcoA/AnimationPlayer
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -18,6 +19,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _physics_process(delta: float) -> void:
+	if Input.is_action_pressed("attack"):
+		if !weapon_animation.is_playing():
+			weapon_animation.play("attack")
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
