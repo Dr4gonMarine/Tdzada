@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://djwgxaknx7iwj"]
+
+[ext_resource type="Script" uid="uid://dpfb0q411mtbu" path="res://scenes/enemies/enemy.gd" id="1_3afmq"]
+[ext_resource type="PackedScene" uid="uid://duqvjak4eea4h" path="res://assets/prototype/Dummy_Base.glb" id="1_5p3ry"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qr5ge"]
+height = 2.1729126
+radius = 0.3564453
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_53ojl"]
+radius = 0.36767578
+height = 0.97074986
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_53ojl"]
+radius = 0.565224
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nvo03"]
+height = 1.8956909
+radius = 0.1430664
+
+[node name="Dummy" type="RigidBody3D" unique_id=374411193]
+collision_layer = 2
+script = ExtResource("1_3afmq")
+
+[node name="Dummy_Base2" parent="." unique_id=161903174 instance=ExtResource("1_5p3ry")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=533468798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0938416, 0)
+shape = SubResource("CylinderShape3D_qr5ge")
+
+[node name="HurtBox" type="Area3D" parent="." unique_id=75377098]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox" unique_id=200683174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83932257, 0.0293217)
+shape = SubResource("CapsuleShape3D_53ojl")
+debug_color = Color(0.65888005, 0.25955215, 0.16814455, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="HurtBox" unique_id=1092673331]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6908593, 0.023128718)
+shape = SubResource("SphereShape3D_53ojl")
+debug_color = Color(0.65882355, 0.25882354, 0.16862746, 0.41960785)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="HurtBox" unique_id=1368668391]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.0036315918, 1.1029974, 0)
+shape = SubResource("CylinderShape3D_nvo03")
+debug_color = Color(0.65882355, 0.25882354, 0.16862746, 0.41960785)
+
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]

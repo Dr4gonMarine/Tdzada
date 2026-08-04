@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cqyu5ae866bip"]
 
-[ext_resource type="PackedScene" uid="uid://dx2lg7mmra0yg" path="res://assets/weapons/bow_A_withString.gltf" id="1_74xft"]
-[ext_resource type="Script" uid="uid://cttau7544luyr" path="res://scenes/weapons/Weapon.gd" id="1_wst7g"]
+[ext_resource type="Script" uid="uid://cgig3c1q4qiuv" path="res://scenes/weapons/bow_weapon.gd" id="1_5gg0s"]
+[ext_resource type="PackedScene" uid="uid://bevcu5ttjf1q6" path="res://scenes/weapons/arrow_a.tscn" id="2_p537y"]
+[ext_resource type="PackedScene" uid="uid://sv4callrjsc0" path="res://assets/weapons/arrow_A.gltf" id="3_p537y"]
+[ext_resource type="PackedScene" uid="uid://dx2lg7mmra0yg" path="res://assets/weapons/bow_A_withString.gltf" id="3_qyobb"]
 
 [sub_resource type="Animation" id="Animation_74xft"]
 length = 0.001
@@ -38,16 +40,17 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d1dat"]
 _data = {
 &"RESET": SubResource("Animation_74xft"),
-&"attack_1": SubResource("Animation_e013f")
+&"shoot": SubResource("Animation_e013f")
 }
 
 [node name="BowA" type="Node3D" unique_id=1508238487]
-script = ExtResource("1_wst7g")
+script = ExtResource("1_5gg0s")
+ammo = ExtResource("2_p537y")
 
 [node name="Pivot" type="Node3D" parent="." unique_id=54302909]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.26289922, 0, 0)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.26289922, 0.24920452, -0.080397666)
 
-[node name="bow_A_withString2" parent="Pivot" unique_id=1968079798 instance=ExtResource("1_74xft")]
+[node name="bow_A_withString2" parent="Pivot" unique_id=1968079798 instance=ExtResource("3_qyobb")]
 transform = Transform3D(1, -4.37114e-08, 4.3711385e-08, -4.371139e-08, -4.3711395e-08, 0.9999999, -4.371139e-08, -1.0000002, -4.3711385e-08, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pivot" unique_id=2048926001]
@@ -55,8 +58,15 @@ unique_name_in_owner = true
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_d1dat")
 
-[node name="RayCast3D" type="RayCast3D" parent="Pivot" unique_id=223031638]
-transform = Transform3D(1, -4.371139e-08, -4.371139e-08, -4.371139e-08, -4.3711385e-08, -1, 4.371139e-08, 1, -4.371139e-08, 0, 0, 0)
-target_position = Vector3(0, 0, -1)
+[node name="ProjectileSpawner" type="Marker3D" parent="Pivot" unique_id=1167924161]
+unique_name_in_owner = true
+transform = Transform3D(1, -4.3711378e-08, -4.371139e-08, -4.3711385e-08, 1.3113416e-07, -1, 4.371139e-08, 1, 1.3113416e-07, 0.011881366, 0.29000002, 0)
+
+[node name="ArrowVisual" parent="Pivot" unique_id=26684400 instance=ExtResource("3_p537y")]
+unique_name_in_owner = true
+transform = Transform3D(1, -4.371139e-08, 4.371139e-08, -4.371139e-08, -4.3711385e-08, 1, -4.371139e-08, -1, -4.371139e-08, 1.4901161e-08, 0.34811652, 0)
+
+[node name="TensionLimit" type="Marker3D" parent="Pivot" unique_id=1275165591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, -0.44494486, 0)
 
 [connection signal="animation_finished" from="Pivot/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

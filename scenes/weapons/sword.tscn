@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cbuhug1grkbmj"]
 
-[ext_resource type="Script" uid="uid://cttau7544luyr" path="res://scenes/weapons/Weapon.gd" id="1_3pnln"]
 [ext_resource type="PackedScene" uid="uid://dmucg0aec4lex" path="res://assets/weapons/sword_B.gltf" id="1_o616w"]
+[ext_resource type="Script" uid="uid://fn64cxmkddud" path="res://scenes/weapons/melee_weapon.gd" id="3_58ehi"]
 
 [sub_resource type="Animation" id="Animation_o616w"]
 length = 0.001
@@ -74,7 +74,7 @@ height = 1.5013504
 
 [node name="Sword" type="Node3D" unique_id=1831771964]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
-script = ExtResource("1_3pnln")
+script = ExtResource("3_58ehi")
 
 [node name="Pivot" type="Node3D" parent="." unique_id=1853098830]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, 0, 0)
@@ -86,7 +86,10 @@ unique_name_in_owner = true
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_58ehi")
 
-[node name="HitBox" type="Area3D" parent="Pivot" unique_id=313604318]
+[node name="HitBox" type="Area3D" parent="Pivot" unique_id=313604318 groups=["Weapon"]]
+unique_name_in_owner = true
+collision_layer = 4
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pivot/HitBox" unique_id=686257367]
 transform = Transform3D(0.9999943, 0, 0, 0, 1, 0, 0, 0, 0.9999943, 0, 0.889225, 0)

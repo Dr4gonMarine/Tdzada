@@ -1,20 +1,15 @@
+@abstract
 extends Node3D
 class_name Weapon
 
-enum State {IDLE, ATTACKING}
-
-@onready var animation_player : AnimationPlayer = %AnimationPlayer
+enum State {IDLE, ATTACKING, CHARGING}
 
 var current_state : State = State.IDLE
 
-func attack() -> void:
-	if current_state == Weapon.State.IDLE:
-		animation_player.play("attack_1")
-		current_state = Weapon.State.ATTACKING
+@abstract func attack() -> void
 
+func release_attack() -> void:
+	pass
 
-func _on_animation_player_animation_finished(anim_name: StringName) -> void:
-	if current_state == Weapon.State.ATTACKING:
-		animation_player.play("attack_1", -1, -2.0, true)
-	
-	current_state = Weapon.State.IDLE
+func cancel() -> void:
+	current_state = State.IDLE
