@@ -21,6 +21,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 [node name="Hand" type="Node3D" parent="Head" unique_id=1815703993]
 unique_name_in_owner = true
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.7134052, -0.6, -0.6428275)
-
-[node name="ArcoA" parent="." unique_id=1508238487 instance=ExtResource("2_dovo2")]
-transform = Transform3D(0.05879562, 0.90584326, -0.41951334, -0.9824997, -0.021893313, -0.18497275, -0.17674083, 0.42304748, 0.88870317, 0.5398481, 1.1369685, -0.6495489)
