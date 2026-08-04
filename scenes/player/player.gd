@@ -1,20 +1,24 @@
 extends CharacterBody3D
 
-const SPEED = 5.0
-const RUN_SPEED_BONUS = SPEED * 0.35
-const JUMP_VELOCITY = 4.5
-const MOUSE_SENSITIVITY = 0.003
+const SPEED: float = 5.0
+const RUN_SPEED_BONUS: float = SPEED * 0.35
+const JUMP_VELOCITY: float = 4.5
+const MOUSE_SENSITIVITY: float = 0.003
 
-var initial_weapon = load("res://scenes/weapons/sword.tscn")
-var current_weapon : Weapon
+var initial_weapon: PackedScene = load("res://scenes/weapons/sword.tscn")
+var current_weapon_index : int
+var bow: PackedScene = load("res://scenes/weapons/bow_A.tscn")
+var sword: PackedScene = load("res://scenes/weapons/sword.tscn")
+var all_weapons: Array[Weapon] = []
 
 @onready var head: Node3D = $Head
 @onready var hand : Node3D = %Hand
-@onready var weapon_animation = $ArcoA/AnimationPlayer
+
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	_equip_weapon(initial_weapon)
+	equip_weapon(sword)
+	equip_weapon(bow)	
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -26,7 +30,14 @@ func _unhandled_input(event: InputEvent) -> void:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 	if event.is_action_pressed("attack"):
-		current_weapon.attack()
+		_get_current_weapon().attack()
+		
+	if event.is_action_pressed("weapon_slot_1"):
+		change_weapon(0)
+		
+	if event.is_action_pressed("weapon_slot_2"):
+		change_weapon(1)
+
 
 
 func _physics_process(delta: float) -> void:
@@ -52,7 +63,26 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-func _equip_weapon(weapon: PackedScene) -> void:
-	var weapon_instace = weapon.instantiate() as Weapon
-	hand.add_child(weapon_instace)
-	current_weapon = weapon_instace
+func equip_weapon(weapon: PackedScene) -> void:
+	var weapon_instance: Weapon = weapon.instantiate() as Weapon
+	hand.add_child(weapon_instance)
+
+	if (_get_current_weapon() != null):
+		weapon_instance.hide()
+
+	all_weapons.append(weapon_instance)
+		
+	if (_get_current_weapon() == null):
+		current_weapon_index = all_weapons.find(weapon_instance)
+	
+	
+func change_weapon(new_weapon_index: int) -> void:
+	_get_weapon_by_index(current_weapon_index).hide()
+	current_weapon_index = new_weapon_index
+	_get_weapon_by_index(new_weapon_index).show()
+
+func _get_current_weapon() -> Weapon:
+	return _get_weapon_by_index(current_weapon_index)
+
+func _get_weapon_by_index(index: int) -> Weapon:
+	return all_weapons.get(index)

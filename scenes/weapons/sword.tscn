@@ -64,8 +64,8 @@ resource_name = "sword_attack_2"
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_58ehi"]
 _data = {
 &"RESET": SubResource("Animation_o616w"),
-&"sword_attack_1": SubResource("Animation_3pnln"),
-&"sword_attack_2": SubResource("Animation_58ehi")
+&"attack_1": SubResource("Animation_3pnln"),
+&"attack_2": SubResource("Animation_58ehi")
 }
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gylbk"]
