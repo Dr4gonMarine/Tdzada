@@ -48,7 +48,7 @@ script = ExtResource("1_5gg0s")
 ammo = ExtResource("2_p537y")
 
 [node name="Pivot" type="Node3D" parent="." unique_id=54302909]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.26289922, 0.24920452, -0.080397666)
+transform = Transform3D(-4.371139e-08, -1, 0, 0.8660254, -3.7855173e-08, 0.5, -0.5, 2.1855694e-08, 0.8660254, -0.263, 0.249, 0.5)
 
 [node name="bow_A_withString2" parent="Pivot" unique_id=1968079798 instance=ExtResource("3_qyobb")]
 transform = Transform3D(1, -4.37114e-08, 4.3711385e-08, -4.371139e-08, -4.3711395e-08, 0.9999999, -4.371139e-08, -1.0000002, -4.3711385e-08, 0, 0, 0)
@@ -58,9 +58,9 @@ unique_name_in_owner = true
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_d1dat")
 
-[node name="ProjectileSpawner" type="Marker3D" parent="Pivot" unique_id=1167924161]
+[node name="Nock" type="Marker3D" parent="Pivot" unique_id=1167924161]
 unique_name_in_owner = true
-transform = Transform3D(1, -4.3711378e-08, -4.371139e-08, -4.3711385e-08, 1.3113416e-07, -1, 4.371139e-08, 1, 1.3113416e-07, 0.011881366, 0.29000002, 0)
+transform = Transform3D(1, -2.9802322e-08, -4.371139e-08, -4.371138e-08, 1.3113416e-07, -1, 2.9802322e-08, 1, 1.3113416e-07, 0.011881366, 0.07920164, 0)
 
 [node name="ArrowVisual" parent="Pivot" unique_id=26684400 instance=ExtResource("3_p537y")]
 unique_name_in_owner = true

@@ -3,8 +3,9 @@ class_name RangedWeapon
 
 #region Variable
 @export var ammo : PackedScene
+@export var spawn_offset: float = 2
 
-@onready var projectile_spawner: Marker3D = %ProjectileSpawner
+@onready var camera : Camera3D = get_viewport().get_camera_3d()
 @onready var animation_player : AnimationPlayer = %AnimationPlayer
 #endregion
 
@@ -18,8 +19,8 @@ func shoot(power: float = 1.0) -> void:
 	animation_player.play("shoot")
 	var projectile := ammo.instantiate()
 	get_tree().current_scene.add_child(projectile)
-	projectile.global_position = projectile_spawner.global_position
-	projectile.global_transform.basis = projectile_spawner.global_transform.basis
+	projectile.global_position = camera.global_position + (-camera.global_basis.z * spawn_offset)
+	projectile.global_basis = camera.global_basis
 	if projectile.has_method("launch"):
 		projectile.launch(power)
 

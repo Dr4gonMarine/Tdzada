@@ -1,25 +1,28 @@
 extends RangedWeapon
 class_name BowWeapon
 
+#region Variable
 @export var draw_time: float = 0.7      # seconds until maximum power
-@export var min_power: float = 0.35     
+@export var min_power: float = 0.2   
 @export var release_time: float = 0.08 
 
 @onready var bow_mesh: MeshInstance3D = find_children("", "MeshInstance3D", true, false)[0]
 @onready var draw_shape: int = bow_mesh.find_blend_shape_by_name("Draw")
 @onready var arrow_visual: Node3D = %ArrowVisual
 @onready var tension_limit : Node3D = $Pivot/TensionLimit
+@onready var nock : Node3D = %Nock
 
 var _nock_rest: Vector3
 var _arrow_rest: Vector3
 var _travel: Vector3
 var _draw: float = 0.0
 var _tween: Tween
+#endregion
 
 func _ready() -> void:
 	arrow_visual.hide()
 	assert(draw_shape >= 0, "Blend shape 'Draw' not found in %s" % bow_mesh.name)
-	_nock_rest = projectile_spawner.position
+	_nock_rest = nock.position
 	_arrow_rest = arrow_visual.position
 	_travel = tension_limit.position - _nock_rest
 	_apply_draw(0.0)
@@ -48,7 +51,7 @@ func cancel() -> void:
 func _apply_draw(t: float) -> void:
 	_draw = t
 	bow_mesh.set_blend_shape_value(draw_shape, t)
-	projectile_spawner.position = _nock_rest + _travel * t
+	nock.position = _nock_rest + _travel * t
 	arrow_visual.position = _arrow_rest + _travel * t
 
 func _snap_back() -> void:
