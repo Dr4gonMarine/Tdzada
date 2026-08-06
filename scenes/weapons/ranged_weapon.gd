@@ -9,7 +9,6 @@ class_name RangedWeapon
 @onready var animation_player : AnimationPlayer = %AnimationPlayer
 #endregion
 
-
 func attack() -> void:
 	if current_state == Weapon.State.IDLE:
 		shoot()

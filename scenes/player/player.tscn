@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://cqg74jy8jyvnk"]
 
 [ext_resource type="Script" uid="uid://kchhkltdej3n" path="res://scenes/player/player.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://bswt0ksshdpx1" path="res://scenes/ui/crosshair.tscn" id="2_dovo2"]
+[ext_resource type="PackedScene" uid="uid://kvp45vvfxhdq" path="res://scenes/ui/wave_counter.tscn" id="3_gmlin"]
+[ext_resource type="PackedScene" uid="uid://fkya2sh65mp5" path="res://scenes/ui/weapon_info.tscn" id="4_lvxji"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
 radius = 0.4
@@ -35,19 +38,11 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Crosshair" type="Label" parent="CanvasLayer/Hud" unique_id=389234329]
+[node name="Crosshair" parent="CanvasLayer/Hud" unique_id=1973179523 instance=ExtResource("2_dovo2")]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "+"
-horizontal_alignment = 1
-vertical_alignment = 1
+
+[node name="WaveCounter" parent="CanvasLayer/Hud" unique_id=107972690 instance=ExtResource("3_gmlin")]
+layout_mode = 1
+
+[node name="WeaponInfo" parent="CanvasLayer/Hud" unique_id=1164725539 instance=ExtResource("4_lvxji")]
+layout_mode = 1

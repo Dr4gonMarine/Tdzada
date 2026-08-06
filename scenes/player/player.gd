@@ -17,6 +17,7 @@ var all_weapons: Array[Weapon] = []
 #region On ready
 @onready var head: Node3D = $Head
 @onready var hand : Node3D = %Hand
+@onready var ammo_counter_label : Control = $CanvasLayer/Hud/WeaponInfo/Name
 #endregion
 
 #region Weapon Helpers
@@ -94,6 +95,9 @@ func equip_weapon(weapon: PackedScene) -> void:
 	
 	if (_get_current_weapon() == null):
 		current_weapon_index = all_weapons.find(weapon_instance)
+		
+	_change_weapon_info(current_weapon_index)
+		
 
 
 func change_weapon(new_weapon_index: int) -> void:
@@ -102,3 +106,7 @@ func change_weapon(new_weapon_index: int) -> void:
 	old.hide()
 	current_weapon_index = new_weapon_index
 	_get_weapon_by_index(new_weapon_index).show()
+	_change_weapon_info(new_weapon_index)
+
+func _change_weapon_info(new_weapon_index: int) -> void:
+	ammo_counter_label.text = _get_weapon_by_index(new_weapon_index).weapon_name

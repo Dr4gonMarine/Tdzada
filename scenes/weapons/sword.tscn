@@ -75,6 +75,7 @@ height = 1.5013504
 [node name="Sword" type="Node3D" unique_id=1831771964]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 script = ExtResource("3_58ehi")
+weapon_name = "Espada da Morte Mortífera"
 
 [node name="Pivot" type="Node3D" parent="." unique_id=1853098830]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, 0, 0)
