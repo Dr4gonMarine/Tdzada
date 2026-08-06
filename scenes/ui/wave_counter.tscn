@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://kvp45vvfxhdq"]
+
+[node name="WaveCounter" type="Control" unique_id=107972690]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="." unique_id=1463013259]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 13.0
+offset_right = 598.0
+offset_bottom = 36.0
+text = "Wave 1"

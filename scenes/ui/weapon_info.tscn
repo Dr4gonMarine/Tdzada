@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://fkya2sh65mp5"]
+
+[node name="WeaponInfo" type="Control" unique_id=1164725539]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Name" type="Label" parent="." unique_id=257342673]
+layout_mode = 0
+offset_left = 959.0
+offset_top = 563.0
+offset_right = 1107.0
+offset_bottom = 606.0
+autowrap_mode = 3
